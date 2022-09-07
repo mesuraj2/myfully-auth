@@ -6,7 +6,7 @@ import CredentialsProvider from "next-auth/providers/credentials"
 // import clientPromise from "./lib/mongodb"
 import FacebookProvider from "next-auth/providers/facebook";
 import connectDB from "./lib/connectDB";
-import Users from '../../models/userModel'
+import NextautUser from '../../models/userModel'
 import bcrypt from 'bcrypt'
 
 connectDB();
@@ -39,7 +39,7 @@ export default NextAuth({
       async authorize(credentials, req) {
         const email=credentials.email;
         const password=credentials.password;
-          const user=await Users.findOne({email})
+          const user=await NextautUser.findOne({email})
           if(!user){
             throw new Error("you havent registered yet")
           }

@@ -7,7 +7,7 @@ const connectDB=()=>{
     //     return;
     // }
     mongoose.connect(process.env.MONGODB_URI,{},err=>{
-        if(err ) throw err;
+        if(err) throw err;
         console.log("connected successfully");
     })
 }

@@ -17,5 +17,8 @@ const userSchema =new mongoose.Schema({
     }
 },{timestamps:true})
 
-let dataset=mongoose.models.NextautUser || mongoose.model('NextautUser', userSchema);
-export default dataset;
+let Dataset= mongoose.models.NextautUser || mongoose.model('NextautUser', userSchema);
+export default Dataset;
+
+
+// export default Dataset= mongoose.model("NextautUser", userSchema);
