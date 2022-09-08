@@ -1,5 +1,5 @@
 import bcrypt from  'bcrypt'
-import  NextautUser from '../models/userModel'
+import  NextautUser from '../../models/userModel'
 
 
 export default async function handler(req, res) {

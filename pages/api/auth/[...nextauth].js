@@ -6,7 +6,7 @@ import CredentialsProvider from "next-auth/providers/credentials"
 // import clientPromise from "./lib/mongodb"
 import FacebookProvider from "next-auth/providers/facebook";
 import connectDB from "./lib/connectDB";
-import NextautUser from '../../models/userModel'
+import NextautUser from '../../../models/userModel'
 import bcrypt from 'bcrypt'
 
 connectDB();
